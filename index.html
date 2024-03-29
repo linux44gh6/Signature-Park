@@ -7,7 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/d90cb7d9fc.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
+<style>
+  .font{
+  font-family: "Playfair Display", serif;
+  }
+</style>
 <body>
     <header>
         <div class="navbar bg-base-100">
@@ -37,5 +45,19 @@
             </div>
           </div>
     </header>
+    <main>
+      <!-- banner part -->
+      <section class="mt-4">
+        <div class="flex flex-col justify-center items-center space-y-3">
+          <button class="flex btn bg-gradient-to-r from-[#a16dfa51] via-[#ff77ad55] to-[#ffab618a]"><span><img src="image/Vector.png" alt=""></span> Welcome to Signature Park</button>
+          <h1 class="text-7xl font-bold w-[50%] text-center">Transforming
+            Ideas Into
+            Visual <span class="bg-gradient-to-r from-[#A16AFE] to-[#FF77AD] text-transparent bg-clip-text">Masterpiece</span></h1>
+            <p class="w-[40%] text-center text-gray-500 font-semibold">We are a passionate team of UI/UX Designers, dedicated to crafting unique and intuitive digital
+              experiences. With a blend of creativity and technical expertise, we bring ideas to life.</p>
+              <button class="btn bg-gradient-to-r from-[#D680FE] to-[#7A67F0] text-white"> <span><img src="image/AddressBook.png" alt=""></span>Contact us</button>
+        </div>
+      </section>
+    </main>
 </body>
 </html>
