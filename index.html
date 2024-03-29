@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <style>
   .font{
@@ -49,15 +50,38 @@
       <!-- banner part -->
       <section class="mt-4">
         <div class="flex flex-col justify-center items-center space-y-3">
-          <button class="flex btn bg-gradient-to-r from-[#a16dfa51] via-[#ff77ad55] to-[#ffab618a]"><span><img src="image/Vector.png" alt=""></span> Welcome to Signature Park</button>
-          <h1 class="text-7xl font-bold w-[50%] text-center">Transforming
+          <button class="flex btn bg-gradient-to-r from-[#a16dfa51] via-[#ff77ad55] to-[#ffab618a]"  data-aos="fade-up"><span><img src="image/Vector.png" alt=""></span> Welcome to Signature Park</button>
+          <h1 class=" text-4xl lg:text-7xl font-bold lg:w-[50%] text-center" data-aos="flip-down" data-aos-duration="1500">Transforming
             Ideas Into
             Visual <span class="bg-gradient-to-r from-[#A16AFE] to-[#FF77AD] text-transparent bg-clip-text">Masterpiece</span></h1>
-            <p class="w-[40%] text-center text-gray-500 font-semibold">We are a passionate team of UI/UX Designers, dedicated to crafting unique and intuitive digital
+            <p class="lg:w-[40%] text-center text-gray-500 font-semibold" data-aos="flip-left" data-aos-duration="2000">We are a passionate team of UI/UX Designers, dedicated to crafting unique and intuitive digital
               experiences. With a blend of creativity and technical expertise, we bring ideas to life.</p>
-              <button class="btn bg-gradient-to-r from-[#D680FE] to-[#7A67F0] text-white"> <span><img src="image/AddressBook.png" alt=""></span>Contact us</button>
+             <div class="relative" data-aos="fade-up" data-aos-duration="000">
+              <button class="btn bg-gradient-to-r from-[#D680FE] to-[#7A67F0] text-white  h-full w-full  bg-sky-400 opacity-75"> <span><img src="image/AddressBook.png" alt=""></span>Contact us</button>
+             </div>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init', 
+  animatedClassName: 'aos-animate', 
+  useClassNames: false, 
+  disableMutationObserver: false,
+  debounceDelay: 90, 
+  throttleDelay: 99, 
+
+
+        offset: 0, 
+  delay: 500, 
+  duration: 1000, 
+  easing: 'ease-in-out-cubic',
+  once: false, 
+  mirror: false,
+  anchorPlacement: 'top-bottom', 
+      });
+    </script>
 </body>
 </html>
